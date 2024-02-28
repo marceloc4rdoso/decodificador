@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="assets\img\logo.png" alt="Logo da Alura">
+        <h1>Decodificador</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="container__conteudo">
+                <div class="container__conteudo__secaohum">
+                    <textarea class="container__conteudo__secaohum__texto-entrada" id="texto_entrada" rows="7" cols="50" placeholder="Digite seu texto:"></textarea>
+                    <div class="container__conteudo__secaohum__alerta">
+                        <img class="container__conteudo__secaohum__img-alerta" src="assets\img\alert1.svg" alt="Alerta de como inserir os textos. Insira letras minúsculas e sem acentos.">
+                        <label class="container__conteudo__secaohum__texto-alerta">Insira letras minúsculas e sem acentos.</label>
+                    </div>
+                    <div class="container__conteudo__secaohum__opcoes">
+                        <button class="container__conteudo__secaohum__botao-cripitografa" onclick="criptografa()">Criptografar</button>
+                        <button class="container__conteudo__secaohum__botao-descripitografa" onclick="descriptografa()">Descriptografar</button>
+                    </div>                
+                </div>
+                <div class="container__conteudo__secaodois">                
+                        <textarea class="container__conteudo__secaodois__texto-saida" id="texto_saida" rows="7" cols="50" placeholder="Texto processado:"></textarea>
+                        <div id="alertas">                        
+                            <img id="imgboneco" class="container__conteudo__secaodois__imagem" src="assets\img\guy-search.svg" alt="Garoto buscando palavras para criptografar.">
+                            <div id="texto-alerta" class="container__conteudo__secaodois__texto">
+                                <h3>Nenhum texto criptografado...</h3>
+                                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                            </div>
+                        </div>                        
+                        <button class="container__conteudo__secaodois__botao-copia" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Marcelo Cardoso</p>
+    </footer>
+    <script src="js\app.js"></script>
+</body>
+</html>

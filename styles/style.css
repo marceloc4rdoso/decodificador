@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-nav: #bbbbbb;
+    --cor-primaria: #cccccc;
+    --cor-secundaria:  #424141;
+    --cor-tercearia: #dddddd;
+    --cor-quaternaria: #27496D;
+    --cor-hover: #19022c;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{    
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    color: #0A3871;
+}
+
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+}
+
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        padding: 1% 0% 1% 0%;
+        background-color: var(--cor-nav);
+        color: var(--cor-secundaria);
+        font-size: 1rem;
+    }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .container__conteudo{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 2%; 
+        justify-content: center;       
+        text-align: center;
+        gap: 15%;
+    }
+
+/*
+* Lado criptografa
+*/
+
+.container__conteudo__secaohum{
+    width: 70%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 0.5rem;        
+    padding: 5%;
+    gap: 1%;
+}
+    .container__conteudo__secaohum__texto-entrada{
+        justify-content: center;
+        font-size: 0.8rem;
+        font-family: var(--fonte-secundaria);
+        border-radius: 0.5rem;  
+        padding: 2%;
+        gap: 2%;
+    }
+
+    .container__conteudo__secaohum__alerta{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        gap: 2%;
+    }
+        .container__conteudo__secaohum__texto-alerta{
+            font-size: 0.7rem;
+        }        
+
+    .container__conteudo__secaohum__opcoes{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 2%;    
+        gap: 2rem;    
+    }
+
+        .container__conteudo__secaohum__botao-cripitografa{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            box-shadow: 0 0 0.625rem 0rem var(--cor-tercearia);
+            border: 0.125rem solid ;
+            width: 100%;
+            text-align: center;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            background-color: var(--cor-quaternaria);
+            color: var(--cor-primaria);
+            font-family: var(--fonte-secundaria);             
+        }
+
+
+        .container__conteudo__secaohum__botao-descripitografa{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            box-shadow: 0 0 0.625rem 0rem var(--cor-tercearia);
+            border: 0.125rem solid ;
+            width: 100%;
+            text-align: center;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            background-color: var(--cor-secundaria);
+            color: var(--cor-primaria);
+            font-family: var(--fonte-secundaria);            
+        }
+/*
+* Lado descriptografa
+*/
+.container__conteudo__secaodois{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        box-shadow: #424141;
+        border: 0.125rem solid ;
+        text-align: center;
+        border-radius: 0.5rem;        
+        padding: 2%;
+        gap: 1%;
+}
+
+    .container__conteudo__secaodois__texto-saida{
+        display: flex;     
+        justify-content: center;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+        font-family: var(--fonte-secundaria);
+        padding: 2%;
+        gap: 2%;        
+    }
+
+    .container__conteudo__secaodois__imagem{
+        width: 50%;
+        display: none;
+        display: flex;
+        justify-content: center;        
+        flex-direction: column;        
+        gap: 2rem;
+        margin-left: 25%;
+    }
+    .container__conteudo__secaodois__texto{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: #424141;
+        border: 0.025rem solid ;
+        text-align: center;
+        border-radius: 0.5rem;  
+        font-size: 0.7rem;
+        padding: 0.2rem;
+        gap: 2%;
+    }
+    .container__conteudo__secaodois__botao-copia{
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        box-shadow: 0 0 0.625rem 0rem var(--cor-tercearia);
+        border: 0.125rem solid ;
+        width: 100%;
+        text-align: center;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        background-color: #aaaaaa;
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-secundaria);
+        margin-top: 5%; 
+    }
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1% 0% 1% 0%;
+    background-color: var(--cor-nav);
+    color: var(--cor-quaternaria);
+    font-size: 1rem;
+}
+
+/*
+* Hovers
+*/
+
+.container__conteudo__secaohum__botao-cripitografa:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+.container__conteudo__secaohum__botao-descripitografa:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+.container__conteudo__secaodois__botao-copia:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+/*
+* Dispositivos
+*/
+
+@media (max-width: 1000px){
+    .container{
+        padding: 5%;
+    }
+    .container__conteudo{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container__conteudo__secaohum{
+        flex-direction: column;
+        padding: 2%;
+    }
+    .container__conteudo__secaodois{
+        width: auto;
+    }
+}
