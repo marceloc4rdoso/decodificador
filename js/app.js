@@ -48,7 +48,9 @@ function copiarTexto() {
 
 //Manipulação de elementos na tela
 // Função para verificar o conteúdo do textarea e ocultar elementos
-function verificarConteudo() {
+function mostrarConteudo() {
+
+    // refatorar essa função que não está funcionando
     const textarea = document.getElementById('texto_saida');
     const imgBoneco = document.getElementById('imgboneco');
     const textoAlerta = document.getElementById('texto-alerta');
