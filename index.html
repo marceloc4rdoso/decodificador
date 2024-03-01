@@ -21,18 +21,18 @@
         <section class="container">
             <div class="container__conteudo">
                 <div class="container__conteudo__secaohum">
-                    <textarea class="container__conteudo__secaohum__texto-entrada" id="texto_entrada" rows="7" cols="50" placeholder="Digite seu texto:"></textarea>
+                    <textarea class="container__conteudo__secaohum__texto-entrada" id="texto_entrada" rows="7" cols="50" placeholder="Digite o que deseja criptografar:"></textarea>
                     <div class="container__conteudo__secaohum__alerta">
                         <img class="container__conteudo__secaohum__img-alerta" src="assets\img\alert1.svg" alt="Alerta de como inserir os textos. Insira letras minúsculas e sem acentos.">
-                        <label class="container__conteudo__secaohum__texto-alerta">Insira letras minúsculas e sem acentos.</label>
+                        <label class="container__conteudo__secaohum__texto-alerta">Insira palavras ou textos e sem acentos.</label>
                     </div>
                     <div class="container__conteudo__secaohum__opcoes">
-                        <button class="container__conteudo__secaohum__botao-cripitografa" onclick="criptografa()">Criptografar</button>
-                        <button class="container__conteudo__secaohum__botao-descripitografa" onclick="descriptografa()">Descriptografar</button>
+                        <button id="cripto" class="container__conteudo__secaohum__botao-cripitografa" onclick="criptografa()">Criptografar</button>
+                        <button id="descrito" class="container__conteudo__secaohum__botao-descripitografa" onclick="descriptografa()">Descriptografar</button>
                     </div>                
                 </div>
                 <div class="container__conteudo__secaodois">                
-                        <textarea class="container__conteudo__secaodois__texto-saida" id="texto_saida" rows="7" cols="50" placeholder="Texto processado:"></textarea>
+                        <textarea class="container__conteudo__secaodois__texto-saida" id="texto_saida" rows="7" cols="50" placeholder="Aqui você verá seu texto criptografado!"></textarea>
                         <div id="alertas">                        
                             <img id="imgboneco" class="container__conteudo__secaodois__imagem" src="assets\img\guy-search.svg" alt="Garoto buscando palavras para criptografar.">
                             <div id="texto-alerta" class="container__conteudo__secaodois__texto">
@@ -40,7 +40,7 @@
                                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                             </div>
                         </div>                        
-                        <button class="container__conteudo__secaodois__botao-copia" onclick="copiarTexto()">Copiar</button>
+                        <button id="btn-copia" class="container__conteudo__secaodois__botao-copia" onclick="copiarTexto()">Copiar</button>
                 </div>
             </div>
         </section>
@@ -48,6 +48,6 @@
     <footer class="rodape">
         <p>Desenvolvido por Marcelo Cardoso</p>
     </footer>
-    <script src="js\app.js"></script>
+    <script src="js\app.js" defer></script>
 </body>
 </html>

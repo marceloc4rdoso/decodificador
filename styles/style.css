@@ -147,6 +147,7 @@ body{
 }
 
     .container__conteudo__secaodois__texto-saida{
+        display: none;
         display: flex;     
         justify-content: center;
         font-size: 0.8rem;
@@ -157,8 +158,8 @@ body{
     }
 
     .container__conteudo__secaodois__imagem{
-        width: 50%;
         display: none;
+        width: 50%;
         display: flex;
         justify-content: center;        
         flex-direction: column;        
@@ -179,6 +180,7 @@ body{
         gap: 2%;
     }
     .container__conteudo__secaodois__botao-copia{
+        display: none;
         display: flex;
         justify-content: center;
         gap: 2%;

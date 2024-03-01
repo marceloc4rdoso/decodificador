@@ -47,24 +47,24 @@ function copiarTexto() {
 }
 
 //Manipulação de elementos na tela
-// Função para verificar o conteúdo do textarea e ocultar elementos
-function mostrarConteudo() {
 
-    // refatorar essa função que não está funcionando
-    const textarea = document.getElementById('texto_saida');
-    const imgBoneco = document.getElementById('imgboneco');
-    const textoAlerta = document.getElementById('texto-alerta');
+const btnTriggerOff = document.getElementById("cripto");
+const btnTriggerOn = document.getElementById("descripto");
 
-    if (textarea.value.trim() !== '') {
-        // Se o textarea não estiver vazio, oculte os elementos
-        imgBoneco.style.display = 'none';
-        textoAlerta.style.display = 'none';
-    } else {
-        // Caso contrário, exiba os elementos
-        imgBoneco.style.display = 'block'; // ou 'inline' se for uma imagem
-        textoAlerta.style.display = 'block'; // ou 'inline' se for um label
-    }
+btnTriggerOff.addEventListener("click", ocultarConteudo);
+function ocultarConteudo() {
+
+    let imgboneco = document.getElementById("imgboneco");
+    let textoalerta = document.getElementById("texto-alerta");
+            if (imgboneco.style.display === "none" & textoalerta.style.display === "none") {
+                imgboneco.style.display = "block";
+                textoalerta.style.display = "block";
+            } else {
+                imgboneco.style.display = "none";
+                textoalerta.style.display = "none";
+            }    
 }
 
-// Adicione um ouvinte de evento para o evento 'input' (quando o usuário digita algo)
-document.getElementById('alertas').addEventListener('input', verificarConteudo);
+
+
+
