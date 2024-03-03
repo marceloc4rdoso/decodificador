@@ -16,9 +16,7 @@
     margin: 0;
     padding: 0;
 }
-.logo{
-    color: #0A3871;
-}
+
 
 
 body{
@@ -36,6 +34,12 @@ body{
         color: var(--cor-secundaria);
         font-size: 1rem;
     }
+        .logo{
+            color: #0A3871;
+            padding: 1%;
+        }
+        
+              
 
 .container{
     display: flex;
@@ -60,11 +64,10 @@ body{
 .container__conteudo__secaohum{
     width: 70%;
     display: flex;
-    flex-direction: column;    
-    justify-content: space-between;
+    flex-direction: column;   
     text-align: center;
     border-radius: 0.5rem;        
-    padding: 5%;
+    padding: 2%;
     gap: 1%;
 }
     .container__conteudo__secaohum__texto-entrada{
@@ -106,7 +109,7 @@ body{
             text-align: center;
             border-radius: 0.5rem;
             font-size: 1rem;
-            padding: 0.5rem 0;
+            padding: 0.5rem;
             background-color: var(--cor-quaternaria);
             color: var(--cor-primaria);
             font-family: var(--fonte-secundaria);             
@@ -123,7 +126,7 @@ body{
             text-align: center;
             border-radius: 0.5rem;
             font-size: 1rem;
-            padding: 0.5rem 0;
+            padding: 0.5rem;
             background-color: var(--cor-secundaria);
             color: var(--cor-primaria);
             font-family: var(--fonte-secundaria);            
@@ -178,6 +181,31 @@ body{
         padding: 0.2rem;
         gap: 2%;
     }
+
+    .container__conteudo__secaodois__campo-whatsapp{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: #424141;
+        border-radius: 0.3rem;
+        border: 0.125rem solid ;
+        font-size: 0.8rem;
+        padding: 0.2rem;
+        margin: 5%;
+        gap: 2%;
+    }
+    .container__conteudo__secaodois__whatsapp{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0.2rem;
+        gap: 2%;
+    }
+
     .container__conteudo__secaodois__botao-copia{
         display: none;
         display: flex;
@@ -241,18 +269,65 @@ body{
 */
 
 @media (max-width: 1000px){
+
     .container{
         padding: 5%;
     }
+
     .container__conteudo{
         justify-content: center;
         flex-direction: column;
     }
+
     .container__conteudo__secaohum{
         flex-direction: column;
         padding: 2%;
     }
+
     .container__conteudo__secaodois{
         width: auto;
     }
+
+    .cabecalho{
+        padding: 5%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container__conteudo__secaohum{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        
+    }
+
+    .container__conteudo__secaodois{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;        
+    }
+
+    .rodape{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2%;
+    }
+
 }

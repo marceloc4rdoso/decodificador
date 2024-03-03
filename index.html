@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link rel="icon" type="image/x-icon" href="assets\img\favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
     <link rel="stylesheet" href="styles/style.css">
 
-    <title>Decodificador</title>
+    <title>Decodificador One - Oracle + Alura</title>
 </head>
 <body>
     <header class="cabecalho">
         <img class="logo" src="assets\img\logo.png" alt="Logo da Alura">
-        <h1>Decodificador</h1>
+        <h1>Decodificador</h1>        
     </header>
     <main>
         <section class="container">
@@ -41,6 +43,10 @@
                                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                             </div>
                         </div>                        
+                        <div class="container__conteudo__secaodois__whatsapp">
+                            <input class="container__conteudo__secaodois__campo-whatsapp" id="meio-envio" placeholder="Digite DDD e número">
+                            <a id="btn-whatsapp"  onclick="envioWhatsapp()"><img src="assets\img\whatsapp.png" alt="Enviar criptografia por Whatsapp"></a>
+                        </div>
                         <button id="btn-copia" class="container__conteudo__secaodois__botao-copia" onclick="copiarTexto()">Copiar</button>
                 </div>
             </div>
