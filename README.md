@@ -19,6 +19,7 @@ Vamos entender como funciona:
    - Suponhamos que temos a mensagem "marcelo esta no one oracle alura". (Inserida no 1º textarea)
    - Se aplicarmos a cifra de César com uma chave de **10**, obtemos a mensagem criptografada: "zneprybrfgnabbarbenpyrnyhen". (Resultado no 2º textarea)
    - Para decifrar, aplicamos o processo inverso com a mesma chave, obtendo a mensagem original de volta. (Clique no botão copia e depois cole no 1º textearea. Clique em descripitografa)
+   - Em 03/03/2024 foi inserida a função enviar por Whatsapp. Orimeiro envia o desultado da codificação da palavra, frase ou texto processado e depois é enviado um link para a pessoa que recebeu acessar o site do projeto e colar a mensagem codificada.
 
 ##### A Cifra de César é uma técnica histórica e simples, mas eficaz, para proteger informações. Ela leva o nome de Júlio César, que a utilizava para se comunicar com seus generais durante guerras.
 ##### Saiba mais sobre a Cifra de Cesar no Wikipédia : https://pt.wikipedia.org/wiki/Cifra_de_César
