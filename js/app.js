@@ -14,8 +14,7 @@ function criptografa() {
     }
 
     document.getElementById("texto_saida").value = novoTexto;
-    document.getElementById("texto_entrada").value = ''; // Limpa o texto original do campo de entrada
-    //return novoTexto
+    document.getElementById("texto_entrada").value = '';
 }
 
 function descriptografa() {
@@ -31,13 +30,12 @@ function descriptografa() {
             const novaLetra = alfabeto.charAt(novaLetraIndice);
             textoDescriptografado += novaLetra;
         } else {
-            // Se não for uma letra do alfabeto, mantenha a mesma letra no texto descriptografado
-            textoDescriptografado += letra;
+             textoDescriptografado += letra;
         }
     }
 
     document.getElementById("texto_entrada").value = textoDescriptografado;
-    document.getElementById("texto_saida").value = ''; // Limpa o texto criptografado
+    document.getElementById("texto_saida").value = ''; 
     console.log(textoDescriptografado)
 }
 
@@ -85,7 +83,6 @@ function envioWhatsapp(){
                       
     if(numeroWhatsapp != "" & mensagem !=""){
         
-        //window.open("https://wa.me/55"+ meioDeEnvio +"?text="+ mensagem + " \n " + "Link para decodificar a mensagem: https://marceloc4rdoso.github.io/decodificador/");
         window.open("https://wa.me/55"+ meioDeEnvio +"?text="+ mensagem);
         window.open("https://wa.me/55"+ meioDeEnvio +"?text="+ window.setTimeout("Time",13000) + "Copie essa mensagem cifrada acima e descodifique nesse link: https://marceloc4rdoso.github.io/decodificador/");
     } else{
